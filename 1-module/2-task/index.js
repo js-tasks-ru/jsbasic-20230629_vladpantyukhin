@@ -11,6 +11,15 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  if (name && name.length >= 4) {
+    for (let i = 0; i <= name.length; i++) {
+      if (name[i] === ' ') {
+        return false;
+      }
+    }
+    return true;
+  }
+  return false;
 }
 
 function sayHello() {
