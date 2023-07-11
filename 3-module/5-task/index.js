@@ -2,8 +2,7 @@ function getMinMax(str) {
   // ваш код...
   const numArr = str
                   .split(' ')
-                  .filter(item => !isNaN(parseFloat(item)))
-                  .map(item => parseFloat(item));
+                  .filter(item => !isNaN(item));
 
   const result = {
     min: Math.min(...numArr),
